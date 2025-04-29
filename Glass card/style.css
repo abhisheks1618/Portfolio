@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+  font-family: "Montserrat", serif;
+}
+
+.full{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+}
+
+.circle1{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    position: relative;
+    top: 50px;
+    left: -180px;
+    box-sizing: border-box;
+    box-shadow: 0 0 100px 0px white;
+
+}
+
+.circle2{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #FBDA61;
+    background-image: linear-gradient(90deg, #FBDA61 0%, #FF5ACD 100%);    
+    position: relative;
+    top: 50px;
+    left: 250px;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    box-sizing: border-box;
+    box-shadow: 0 0 100px 0px white;
+
+}
+
+.card{
+    width: 450px;
+    height: 250px;
+    /* border: 1px solid rgb(255, 255, 255); */
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    position: absolute;
+    top: 200px;
+    left: 550px;
+    border-radius: 12px;
+    transition-property: transform;
+    transition-duration: 1s;
+    background-color: rgba(209, 209, 209, 0.159);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(120px);
+    box-shadow: 0 0 8px 0px white;
+
+
+}
+
+#visa{
+    font-size: 32px;
+    color: white;
+    position: absolute;
+    left: 370px;
+}
+
+#mc{
+    font-size: 32px;
+    color: white;
+    position: absolute;
+    left: 320px
+}   
+
+#bank{
+    font-size: 32px;
+    color: white;
+    position: absolute; 
+}
+
+.card-no{
+    position: absolute;
+    top: 120px;
+    color: rgba(255, 255, 255, 0.847);
+    font-size: 28px;
+    font-weight: 400;
+    font-family: "Montserrat", serif;
+}
+
+.name{
+    position: absolute;
+    top: 180px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 200;
+    
+}
+
+.exp{
+    position: absolute;
+    top: 180px;
+    left: 340px;
+    color: rgb(255, 255, 255);
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.card:hover{
+    transform: rotate(5deg) scale(1.1);
+}
+
+.circle1:hover{
+    transform: rotate(360deg);
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+
+.circle2:hover{
+    transform: rotate(360deg);
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+
+
+
+
+
+
