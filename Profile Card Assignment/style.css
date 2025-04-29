@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(22, 22, 22);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    font-family: Roboto, serif ;
+
+}
+
+#card{
+    width: 400px;
+    height: 600px;
+    background-color: rgb(32, 32, 32);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+    box-shadow: 0 0 40px 2px rgb(197, 197, 197);
+}
+
+#card > img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#card > h4{
+    /* display: flex; */
+    margin-top: 16px;
+    color: white;
+    font-size: 24px;
+}
+
+#card > .location{
+    margin-top: 22px;
+    color: greenyellow;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+#card > .persona{
+    margin-top: 30px;
+    color: gray;
+    font-style: italic;
+}
+
+#card > .parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+}
+
+#card > .parent >.item{
+    width: 100%;
+    height: 32px;
+    background-color: rgb(66, 66, 66);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: white;
+    column-gap: 18px;
+}
