@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow: hidden;
+    /* position: relative; */
+    display: flex;
+    /* margin: auto; */
+    font-family: "Montserrat", serif;
+    
+}
+
+.weather-img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    }
+
+.main{
+    margin: auto;
+    /* border: 1px solid white; */
+    display: flex;
+    column-gap: 25px;
+    /* justify-content: center; */
+    width: 90%;
+    height: 90vh;
+    position: absolute;
+    top: 35px;
+    left: 75px;
+    padding: 30px;
+    
+}
+
+
+
+
+.main > .right{
+    /* border: 1px solid white; */
+    width: 75%;
+    height: 80vh;
+    top: 75px;
+    left: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main > .right> .search{
+    /* border: 1px solid white; */
+    background-color: none;
+    width: 300px;
+    height: 45px;
+    margin: 0%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    position: absolute;
+    right: 30px;
+}
+
+.main > .right> .search > input{
+    width: 250px;
+    height: 100%;
+    padding-left: 20px;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.137);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(10px);    
+    outline: 0;
+    border-radius: 10px 0 0 10px;
+    color: white;
+
+}
+
+.main > .right> .search > button{
+    width: 50px;
+    height: 100%;
+    /* border-radius: 50%; */
+    outline: 0;
+    background-color: rgba(255, 255, 255, 0.137);
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}
+
+.main > .right > .r1{
+    /* border: 1px solid white; */
+    width: 60%;
+    height: 75%;
+    /* padding-left: 75px;
+    padding-right: 75px; */
+    /* margin-left: 25px;
+    margin-right: 25px; */
+    position: relative;
+    /* top: 420px; */
+    display: flex;
+    /* justify-content: space-evenly; */
+    column-gap: 50px;
+    /* align-items: center; */
+
+}
+
+.main > .right > .r1 > .temp > .deg{
+    color: white;
+    font-size: 50px;
+    position: relative;
+    left: 20px;
+    margin-top: 48px;
+}
+
+.main > .right > .r1 > .temp > .icon{
+    margin-top: 48px;
+    position: relative;
+    left: 20px;
+}
+
+.main > .right > .r1 > .temp > .loc{
+    color: white;
+    font-size: 24px;
+    position: relative;
+    left: 20px;
+    margin-top: 25px;
+    display: flex;
+    column-gap: 16px;
+    font-size: 16px;
+
+}
+
+.main > .right > .r1> .temp > .location{
+    display: flex;
+    color: white;
+    column-gap: 12px;
+    margin-left: 20px;
+}
+
+
+.main > .right > .r1 > .temp > .status{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    position: relative;
+    left: 20px;
+    margin-top: 20px;
+    /* backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(10px);     */
+}
+
+.main > .right > .rd{
+    display: flex;
+    padding: 20px 20px ;
+    color: white;
+    /* border: 1px solid white; */
+    width: 100%;
+    height: 130px;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+.main > .left{
+    border-radius: 16px;
+    width: 25%;
+    height: 80vh;
+    background-color: rgba(255, 255, 255, 0.137);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(10px);  
+    display: flex;  
+    flex-direction: column;
+    row-gap: 25px;
+    /* justify-content: center; */
+    align-items: center;
+    position: relative;
+    color: white;
+}
+
+.main > .left > img{
+    height: 45px;
+    width: 80px;
+    margin-top: 20px;
+    position: absolute;
+    top: 0px;
+
+}
+
+.main > .left > .ld{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    margin-top: 100px;
+    padding-left: 25px;
+    justify-content: left;
+    /* border: 1px solid white; */
+    
+}
+
+.main > .right > .rd > div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
